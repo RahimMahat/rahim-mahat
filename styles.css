@@ -1,0 +1,35 @@
+/* Jura Font-Family */
+
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
+
+/* Poppins Font-Family */
+
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* common styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    font-family: 'Jura', sans-serif;
+}
+
+html {
+    /* we will be generally using rem (default 1 rem is 16px) as measure to make 1 rem to 10px for simplifications  */
+    font-size: 62.5%;
+}
+
+
+/* Page Back Ground */
+
+.page-bg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/images/bg.jpg) center no-repeat;
+    background-size: cover;
+}
