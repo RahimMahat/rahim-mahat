@@ -248,3 +248,64 @@ html {
         height: 210%;
     }
 }
+
+
+/* Section 2 */
+
+.section-2 {
+    position: relative;
+    padding: 10rem 10rem 15rem 10rem;
+}
+
+.section-2-heading {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 10rem;
+    transform: translateY(-50%);
+    width: 0;
+    word-break: break-all;
+    line-height: 4;
+}
+
+.about-me-text {
+    width: 80%;
+    margin: auto;
+}
+
+.about-me-text span {
+    font-family: "Poppins", sans-serif;
+    font-size: 15rem;
+    font-weight: bold;
+    color: #aaa;
+    letter-spacing: .5rem;
+    line-height: .9;
+    text-shadow: 0 0 1rem #9b0e0e;
+    position: relative;
+    mix-blend-mode: color-dodge;
+}
+
+.section-2 .main-btn {
+    left: 50%;
+    bottom: -5rem;
+    transform: translateX(-50%);
+}
+
+@keyframes aboutMeTextAnim {
+    0% {
+        color: #aaa;
+        top: 0
+    }
+    10%,
+    90% {
+        color: #fff;
+        top: 2rem;
+    }
+    100% {
+        color: #aaa;
+        top: 0
+    }
+}
