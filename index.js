@@ -60,6 +60,26 @@ mainBtns.forEach((btn) => {
     })
 })
 
+// Navigation
+
+const menuIcon = document.querySelector(".menu-icon")
+const navBar = document.querySelector(".navbar")
+
+document.addEventListener("scroll", () => {
+    menuIcon.classList.add("show-menu-icon")
+    navBar.classList.add("hide-navbar")
+
+    if (window.scrollY === 0) {
+        menuIcon.classList.remove("show-menu-icon")
+        navBar.classList.remove("hide-navbar")
+    }
+})
+
+menuIcon.addEventListener("click", () => {
+    menuIcon.classList.remove("show-menu-icon")
+    navBar.classList.remove("hide-navbar")
+})
+
 
 // About me text
 
